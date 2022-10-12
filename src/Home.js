@@ -46,10 +46,10 @@ function Home() {
           />
           <Product
             id="3254354345"
-            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
+            title="Freezer Hard Top 800 Double Door Convertible"
             price={598.99}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+            image="https://cdn.shopify.com/s/files/1/0578/6845/2026/products/5210559_5210567_5210528-Convertible_0fbc2123-f514-43bb-b97b-d2064c3b1cac_120x.jpg?v=1630322311"
           />
         </div>
 
