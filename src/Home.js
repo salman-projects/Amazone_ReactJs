@@ -39,10 +39,10 @@ function Home() {
           />
           <Product
             id="23445930"
-            title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
+            title="Voltas | Inverter AC"
             price={98.99}
             rating={5}
-            image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+            image="https://cdn.shopify.com/s/files/1/0578/6845/2026/products/CZS_2bc28953-22de-4a54-80a2-a8b1449a84ac_1800x1800.jpg?v=1650029367"
           />
           <Product
             id="3254354345"
