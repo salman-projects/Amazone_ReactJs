@@ -42,5 +42,21 @@ function Product({ id, title, image, price, rating }) {
     </div>
   );
 }
-
+{
+interaction: {
+name: "Add To Cart",
+lineItem: {
+catalogObjectType: "Product",
+catalogObjectId: "product-1",
+quantity: 1,
+price: 9.99,
+currency: "USD",
+attributes: {
+giftWrapping: true
+}
+}
+12
+Connect Data Event Specifications
+}
+}
 export default Product;
