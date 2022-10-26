@@ -55,8 +55,6 @@ attributes: {
 giftWrapping: true
 }
 }
-12
-Connect Data Event Specifications
 }
 }
 export default Product;
