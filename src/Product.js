@@ -6,6 +6,21 @@ function Product({ id, title, image, price, rating }) {
   const [{ basket }, dispatch] = useStateValue();
 
   const addToBasket = () => {
+    {
+      interaction: {  
+            name: "Add To Cart",
+            lineItem: {
+                catalogObjectType: "Product",
+                catalogObjectId: "product-1",
+                quantity: 1,
+                price: 9.99,
+                currency: "USD",
+                attributes: {
+                giftWrapping: true
+                            }
+                       }
+                     }
+    }
     // dispatch the item into the data layer
     dispatch({
       type: "ADD_TO_BASKET",
@@ -42,19 +57,5 @@ function Product({ id, title, image, price, rating }) {
     </div>
   );
 }
-{
-interaction: {
-name: "Add To Cart",
-lineItem: {
-catalogObjectType: "Product",
-catalogObjectId: "product-1",
-quantity: 1,
-price: 9.99,
-currency: "USD",
-attributes: {
-giftWrapping: true
-}
-}
-}
-}
+
 export default Product;
