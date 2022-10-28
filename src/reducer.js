@@ -11,6 +11,25 @@ const reducer = (state, action) => {
   console.log(action);
   switch (action.type) {
     case "ADD_TO_BASKET":
+      let data = 
+          {
+          interaction: 
+            {
+              name: "Add To Basket",
+              lineItem: 
+                {
+                  catalogObjectType: "Product",
+                  catalogObjectId: "product-1",
+                  quantity: 1,
+                  price: 98.99,
+                  currency: "USD",
+                  attributes: 
+                      {
+                          giftWrapping: true
+                      }
+                 }
+             }
+          }
       fetch('https://putsreq.com/XiSaiFs48vLI7Zl837TA', 
       {
       method: 'POST', // or 'PUT'
