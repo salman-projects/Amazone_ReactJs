@@ -11,6 +11,14 @@ const reducer = (state, action) => {
   console.log(action);
   switch (action.type) {
     case "ADD_TO_BASKET":
+      fetch('https://putsreq.com/XiSaiFs48vLI7Zl837TA', 
+      {
+      method: 'POST', // or 'PUT'
+      headers: {
+      'Content-Type': 'application/json',
+               },
+      body: JSON.stringify(data),
+      })
       return {
         ...state,
         basket: [...state.basket, action.item],
