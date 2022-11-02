@@ -30,12 +30,10 @@ const reducer = (state, action) => {
                  }
              }
           }
-      fetch('https://collect.tealiumiq.com/event', 
+      fetch('https://putsreq.com/G2uibGUkE5WGZdywAroG', 
       {
       method: 'POST', // or 'PUT'
       headers: {
-        'tealium_account': 'growthwave-sandbox',
-        'tealium_profile': 'di-aaqib',
         'Content-Type':    'application/json'
                },
       body: JSON.stringify(data),
