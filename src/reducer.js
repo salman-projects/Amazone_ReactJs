@@ -21,7 +21,7 @@ const reducer = (state, action) => {
                   catalogObjectType: "Product",
                   catalogObjectId: "product-1",
                   quantity: 1,
-                  price: product_price,
+                  price: 90,
                   currency: "USD",
                   attributes: 
                       {
