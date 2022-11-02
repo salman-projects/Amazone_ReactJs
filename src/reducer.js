@@ -35,8 +35,6 @@ const reducer = (state, action) => {
       method: 'POST', // or 'PUT'
       headers: {
       'Content-Type': 'application/json',
-        'tealium_account':'growthwave-sandbox',
-        'tealium_profile': 'di-aaqib' 
                },
       body: JSON.stringify(data),
       })
