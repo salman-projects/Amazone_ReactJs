@@ -1,7 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   <script src=" https://cdn.c360a.salesforce.com/beacon/c360a/5340484e-fbc3-4bb0-af95-d98b88ee14e1/scripts/c360a.min.js"></script>
+    (function() {
+    'use strict';
+
+    // initialize with consent provided by a user interaction
+SalesforceInteractions.init({
+  cookieDomain: 'domain.com',
+  consents: new Promise(resolve => {
+    // user clicks button that grants consent
+    document.getElementById('opt-in')
+      .addEventListener('click', () => {
+        resolve([{ 
+          provider: 'Test Provider', 
+          purpose: 'Tracking', 
+          status: SalesforceInteractions.ConsentStatus.OptIn 
+        }])
+      }, { once: true })
+
+    // user clicks button that revokes consent
+    document.getElementById('opt-out')
+      .addEventListener('click', () => {
+        resolve([{ 
+          provider: 'Test Provider', 
+          purpose: 'Tracking', 
+          status: SalesforceInteractions.ConsentStatus.OptOut 
+        }])
+      }, { once: true })
+  })
+})
+
+// initialize with consent preconfigured
+SalesforceInteractions.init({
+  cookieDomain: 'domain.com',
+  consents: [{ 
+    provider: 'Test Provider', 
+    purpose: 'Tracking', 
+    status: SalesforceInteractions.ConsentStatus.OptIn 
+  }]
+})
+
+// initialize with no consent
+SalesforceInteractions.init({
+  cookieDomain: 'domain.com',
+  consents: []
+})
+
+     let e = document.createElement('script');
+    e.src = ' https://cdn.c360a.salesforce.com/beacon/c360a/5340484e-fbc3-4bb0-af95-d98b88ee14e1/scripts/c360a.min.js';
+         console.log('script loaded '+ e.toString());
+    document.head.appendChild(e);
+})();
     <script type="text/javascript" src="//cdn.evgnet.com/beacon/growthwavesoftware/amaoneee/scripts/evergage.min.js"></script>
  <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
